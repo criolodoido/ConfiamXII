@@ -1,0 +1,1017 @@
+<RootScreen>:
+	PrimeiroScreen:
+	SegundoScreen:
+	MinicursosScreen:
+	PalestrantesScreen:
+
+<PrimeiroScreen>:
+	canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'tela.jpg'
+	StackLayout:
+		orientation: 'bt-lr'
+		GridLayout:
+			rows: 1
+			padding: 0, 0
+			spacing: 0, 0
+			size_hint: (1, .3)
+			Button:
+				text: "Programação\n   Inscrição"
+				bold: True
+				font_size: '13.5dp'			
+				on_release: root.manager.current = 'dois'
+				background_normal: 'btn1normal.png'
+				background_down: 'btn1down.png'
+			
+			Button:
+				text: "Palestrantes"
+				font_size: '13.5dp'
+				bold: True
+				on_release: root.manager.current = 'pa'
+				background_normal: 'btn1normal.png'
+				background_down: 'btn1down.png'
+			Button:
+				text: "Mini-cursos\nMesa Redonda"
+				font_size: '13.5dp'
+				bold: True
+				background_normal: 'btn1normal.png'
+				background_down: 'btn1down.png'
+				on_release: root.manager.current = 'mc'
+				
+			
+<SegundoScreen>:
+	canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'fundobranco.jpg'
+		
+	ScrollView:
+		size_hint: (1, 1)
+		#size: (500, 300)
+		pos_hint:{'x': .0, 'y': .0}
+		GridLayout:
+			cols: 2
+			padding: 90, 100
+			spacing: 100, 50
+			size_hint: (1, 1)
+			size_hint_y:  None
+			height: self.minimum_height
+			width: 500
+			
+			Label:
+				text: "[b]Quinta Feira[/b] \n[i](06/10)[/i]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Horário[/b]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[i]Entrega de materiais[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]08: 00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Abertura[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]08:30[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra1[/b]\n [i]Gabriela[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]09:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Coffebreak[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]10:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra2[/b]\n [i]Diego[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]10:20[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Almoço[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]11:40[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[i]Sessão Oral[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]14:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Coffebreak[/b]\n  [i]Pôster[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]15:30[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra3[/b]\n[i]Mecca[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]16:15[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra4[/b]\n [i]Gunther[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]17:05[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+
+			Label:
+				text: "[b]Sexta Feira[/b]\n  [i](07/10)[/i]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Horário[/b]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra5[/b]\n  [i]Terlize[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]08:30[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]	
+			Label:
+				text: "[b]Sessão Oral[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]09:30[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]	
+				
+			
+			Label:
+				text: "[b]Coffebreak[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]10:50[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+					
+			Label:
+				text: "[b]Palestra6[/b]\n[i]Maria Izabel[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]11:20[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Almoço[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]12:20[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra7[/b]\n  [i]Angelo[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]14:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Coffebreak[/b]\n  [i]Pôster[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]15:30[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Palestra8[/b]\n  [i]Eduardo[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]16:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Encerramento[/b]\n  [i]Premiação[/i]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]17:30[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Mesa Redonda[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]17:50[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+
+
+			Label:
+				text: "[b]Sábado[/b]\n [i](08/10)[/i]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Horário[/b]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Minicurso 1,2[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]08:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Minicurso 3,4[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]10:00[/b]"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Inscrição:[/b]"
+				color: 1,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Button:
+				text: "\n[b]Clique aqui[/b]\n"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+				background_normal: "btn1normal.png"
+				on_release: root.abre()
+				
+			Label:
+				text: "\n"
+				color: 0,0,0,1
+				font_size: '20dp'
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+	
+	StackLayout:
+		orientation: 'bt-lr'
+		size_hint: (.2,.2)
+		GridLayout:
+			cols: 1
+			Button:
+				text: "Voltar!"
+				bold: True
+				background_normal: 'btn1normal.png'
+				background_down: 'btn1down.png'
+				on_press: root.manager.current = 'um'
+	
+<MinicursosScreen>:
+	canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'fundobranco.jpg'
+	ScrollView:
+		size_hint: (1, 1)
+		#size: (500, 300)
+		pos_hint:{'x': .0, 'y': .0}
+		GridLayout:
+			cols: 1
+			padding: 0, 100
+			spacing: 50, 5
+			size_hint: (1, 1)
+			size_hint_y:  None
+			height: self.minimum_height
+			width: 500
+			
+			Label:
+				text: "[b]Mini-curso 1:[/b][i] Física da Radioterapia[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Realizado por:[/b][i] Victor Augusto Bertotti Ribeiro[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "[b]Email:[/b][i] victor_abr@hotmail.com[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+					
+			Label:
+				text: "[b]Atualmente:[/b][i]físico médico do Instituto de Radiologia (INRAD) do HCFMUSP, físico médico do Instituto de Oncologia Santa Paula (IOSP) e físico médico do Instituto Brasileiro de Controle do Câncer (IBCC).[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			
+				
+			Label:
+				text: "[b]Mini-curso 2:[/b][i] Física do Radiodiagnóstico[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Realizado por:[/b][i] Rodrigo Sanchez Giarola[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Email:[/b][i] chancez@hotmail.com[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+					
+			Label:
+				text: "[b]Atualmente:[/b][i]aluno de doutorado do programa de pós-graduação em Biologia Geral e Aplicada na UNESP (Botucatu). [/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+				
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			
+			Label:
+				text: "[b]Mini-curso 3:[/b][i] Legislação e normas[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Realizado por:[/b][i] Marcelo Aparecido Ferraz de Lima[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Email:[/b][i] marceloflima@fmb.unesp.br[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+					
+			Label:
+				text: "[b]Atualmente:[/b][i]advogado e supervisor do Setor de Radiologia e Ultrassom do HCFMB. [/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+
+
+			
+			Label:
+				text: "[b]Mini-curso 4:[/b][i] O Radiodiagnóstico na área acadêmica[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Realizado por:[/b][i] Marcela de Oliveira[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Email:[/b][i] m.oliveira@ibb.unesp.br [/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+					
+			Label:
+				text: "[b]Atualmente:[/b][i]aluna do programa de pós-graduação em Farmacologia e Biotecnologia do Instituto de Biociências da Universidade Estadual Paulista “Júlio de Mesquita Filho”, Campus de Botucatu. Trabalha com o projeto de pesquisa “Quantificação Objetiva de Fibrose/Processo Inflamatório em Pacientes com Tuberculose Pulmonar Utilizando Exames de Raios-X de Tórax”, com o apoio finaceiro da Fundação de Amparo à Pesquisa do Estado de São Paulo – FAPESP. [/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+
+			Label:
+				text: "[b]Mesa Redonda:[/b][i]Perspectivas e Avanços na Área da Física Médica.[/i]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+
+				
+			Label:
+				text: "\n \n \n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+	
+	StackLayout:
+		orientation: 'bt-lr'
+		size_hint: (.3,.3)
+		GridLayout:
+			cols: 1
+			Button:
+				text: "Voltar!"
+				bold: True
+				background_normal: 'btn1normal.png'
+				background_down: 'btn1down.png'
+				on_press: root.manager.current = 'um'
+	
+<PalestrantesScreen>:
+	canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'fundobranco.jpg'
+	ScrollView:
+		size_hint: (1, 1)
+		#size: (500, 300)
+		pos_hint:{'x': .0, 'y': .0}
+		GridLayout:
+			cols: 1
+			padding: 0, 100
+			spacing: 50, 5
+			size_hint: (1, 1)
+			size_hint_y:  None
+			height: self.minimum_height
+			width: 500
+			
+			
+			Label:
+				text: "[b]Dra. Gabriela Reis de Jesus – USP[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: Novas Tecnologias em Radioterapia[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "Doutora pela Faculdade de Medicina da USP (2015). Possui especialização em Física Médica pelo Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo (2008), com título de Supervisora de Proteção Radiológica pela Comissão Nacional de Energia Nuclear (2007) e Especialista em Radioterapia pela Associação Brasileira de Física Médica (2009). Possui graduação em Física Médica pela UNESP (2006)"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Prof. Dr. Diego Merigue da Cunha - UFU[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: O método Monte Carlo aplicado a mamografia digital[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "Possui graduação em Física pela Universidade Federal de Juiz de Fora(2003), mestrado em Física Aplicada à Medicina e Biologia pela Universidade de São Paulo(2006) e doutorado em Física Aplicada à Medicina e Biologia pela Universidade de São Paulo(2010). Atualmente é Professor Adjunto da Universidade Federal de Uberlândia. Tem experiência na área de Física, com ênfase em Física. Atuando principalmente nos seguintes temas:mamografia, espalhamento de raios X, Monte Carlo."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Fernando Mecca Augusto - Pró-Sigma[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: Empreendedorismo em Física Médica[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "Graduado em Licenciatura em Físca - Universidade Estadual Paulista (1999) . Mestrado em Engenharia Nuclear pela Universidade Federal do Rio de Janeiro (2009). Físico Médico do Instituto Nacional de Câncer. Especialista em Física Médica área de radiodiagnóstico pela Associação Brasileira de Física Médica e Supervisor de Medicina Nuclear credenciado pela Comissão Nacional de Energia Nuclear."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "[b]Angelo Biase Govone[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: Emprego de técnicas de fluorescência no rastreamento de linfonodos sentinela aos tumores sólidos.[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "Possui graduação interrompida em Física – Universidade de São Paulo (2004), possui graduação em Física Médica – Universidade Paulista Júlio de Mesquita Filho (2012). Mestrado em Física – Universidade de São Paulo (2016). Doutorado – Instituto de Física de São Carlos (em andamento)."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+	
+			
+			Label:
+				text: "[b]Prof. Dr. Günther Johannes Lewczuk Gerhardt - UCS[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: A Física Médica e os Ritmos do EEG[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "Possui graduação em Física (Bacharelado) pela Universidade Federal do Rio Grande do Sul (1996), mestrado (1998) e doutorado (2001) também em Física pela UFRGS. Atualmente é professor da Universidade de Caxias do Sul. Tem experiência em análise de biossinais e biossequencias (EEG em particular além de DNA). Coorientou dois doutorados e um mestrado junto ao Programa de Pos-Graduação em Medicina (Ciências Médicas) da Universidade Federal do Rio Grande do Sul em análise de sinais de EEG. Também coorientou uma aluna de mestrado junto ao Programa de Computação Aplicada do INPE em análise de biossequencias (DNA). Nos últimos anos tem se dedicado a trabalhar com séries de ruido magnético Barkhausen usando ferramentas apropriadas. Os maiores interesses são ferramentas para procura de padrões e periodicidades em séries e biossequencias. Por essa razão é que possui trabalhos em áreas bem diversas. Palavras chave: EEG, DNA, sequence analysis, Frequency analysis, Wavelets, Matching Pursuit, Periodicity."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Profa. Dra. Terlize Cristina Niemeyer - UNESP[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: Propriedades Mecânicas e Microestruturais de Biomateriais Metálicos Recobertos com Filmes Finos Nanoestruturados[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "Possui graduação em Licenciatura Em Física pela Universidade Estadual Paulista Júlio de Mesquita Filho (2001), mestrado em Ciências e Engenharia de Materiais pela Universidade de São Paulo (2003) e doutorado em Ciência e Tecnologia de Materiais pela Universidade Estadual Paulista Júlio de Mesquita Filho (2008). Tem experiência na área de Física e Metalurgia, atuando principalmente nos seguintes temas: biomateriais metálicos, propriedades físicas e mecânicas de ligas metálicas."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Profa. Dra. Maria Isabel Veras Orselli – UNIFRA[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: Ferramentas da Biomecânica Utilizadas para Reabilitação[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "Possui graduação em Bacharel em Física pela Universidade de São Paulo (2004), mestrado em Ciências, biomecânica do Movimento Humano pela Universidade de Wisconsin – Madison (2008). Possui estágio em Pesquisa, Modelamento do Sistema Músculo Esquelético Humano (2013) pela USP. Doutorado em Ciências, Biomecânicas do Movimento Humano (2014)."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+			
+			Label:
+				text: "\n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Eduardo Tachlitsky – Instituto de Criminalística[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "[b]Palestra: A Física na Aplicação da Justiça[/b]"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+			Label:
+				text: "Formado no Instituto de Biociências da Universidade Paulista Júlio de Mesquita Filho, é bacharel em Física Médica. Profissionalmente, atua na área forense, mais especificamente na análise e levantamento de locais de crimes contra a vida, atuando como Perito Criminal da Polícia Civil de São Paulo junto à Equipe de Perícias Criminalísticas do DHPP, especialmente, em casos de Homicídio."
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+					
+			Label:
+				text: "\n \n \n"
+				font_size: '20dp'
+				markup: True
+				color: 0,0,0,1
+				text_size: self.width, None
+				size_hint_y: None
+				height: self.texture_size[1]
+				
+	StackLayout:
+		orientation: 'bt-lr'
+		size_hint: (.3,.3)
+		GridLayout:
+			cols: 1
+			Button:
+				text: "Voltar!"
+				bold: True
+				background_normal: 'btn1normal.png'
+				background_down: 'btn1down.png'
+				on_press: root.manager.current = 'um'
